@@ -16,5 +16,11 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
-
+echo '\e[1m\e[91m'
+echo '#################################################'
+echo '# LOG OUT AND IN IN ORDER TO CHANGES TAKE PLACE #'
+echo '#################################################'
+echo '\e[0m'
