@@ -27,7 +27,7 @@ Create VM using Ubuntu 18.04LTS Minimal image 1vCPU; 4GB RAM; 10GB storage
 ## Instaling basic environment
 
 Connect to VM via ssh and execute following commands 
-or just run `bash <(https://raw.githubusercontent.com/nokia-wroclaw/innovativeproject-test-engine/master/installation/install_script.sh)` 
+or just run `bash <(curl -s https://raw.githubusercontent.com/nokia-wroclaw/innovativeproject-test-engine/master/installation/install_script.sh)` 
 
 ```
 sudo apt update
