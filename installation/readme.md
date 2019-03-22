@@ -20,7 +20,7 @@ Click create
 [JUMP TO STEP 2](#STEP-2)
 
 # STEP 1B
-##Creating local VM
+## Creating local VM
 Create VM using Ubuntu 18.04LTS Minimal image 1vCPU; 4GB RAM; 10GB storage
 
 # STEP 2
