@@ -29,7 +29,7 @@ Create VM using Ubuntu 18.04LTS Minimal image 1vCPU; 4GB RAM; 10GB storage
 Connect to VM via ssh and execute following commands 
 or just run `bash <(curl -s https://raw.githubusercontent.com/nokia-wroclaw/innovativeproject-test-engine/master/installation/install_script.sh)` 
 
-```
+```bash
 sudo apt update
 ### install software needed for development
 sudo apt install vim git htop
@@ -48,6 +48,8 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 sudo groupadd docker
 sudo usermod -aG docker $USER
