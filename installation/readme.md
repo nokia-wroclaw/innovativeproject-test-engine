@@ -1,5 +1,6 @@
 If you want run the project on local VM [JUMP TO STEP 1B](#STEP-1B)
-# STEP 1A Creating VM
+# STEP 1A
+## Creating VM
 Create new project in (google cloud)[console.cloud.google.com] with name such as `projekt-zespolowy-n`
 In the list (top-left corner) select `COMPUTE` -> `Compute Engine` -> `VM instances`
 Click Create.
@@ -18,13 +19,15 @@ Boot disk:
 Click create 
 [JUMP TO STEP 2](#STEP-2)
 
-# STEP 1B Creating local VM
+# STEP 1B
+##Creating local VM
 Create VM using Ubuntu 18.04LTS Minimal image 1vCPU; 4GB RAM; 10GB storage
 
-#STEP 2
+# STEP 2
+## Instaling basic environment
 
 Connect to VM via ssh and execute following commands 
-or just run `bash < (curl -s https://raw.githubusercontent.com/nokia-wroclaw/innovativeproject-test-engine/master/install_script.sh)`
+or just run `bash <(https://raw.githubusercontent.com/nokia-wroclaw/innovativeproject-test-engine/master/installation/install_script.sh)` 
 
 ```
 sudo apt update
