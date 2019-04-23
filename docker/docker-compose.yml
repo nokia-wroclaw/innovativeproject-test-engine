@@ -1,33 +1,37 @@
 version: "3.7"
 services:
-    webapp:
-        image: adminify:latest
-        build:
-            context: ./app
-            dockerfile: Dockerfile        
-        ports:
-            - 8888:8080
-        healthcheck:
-            test: ["CMD","curl","-f","http://localhost:8888"]
-            interval: 1m30s
-            timeout: 20s
-            retries: 5
-            start_period: 1m
-#     testframework:
-#         image: cypress/browsers:chrome69
-#         build: cypress-example-docker-compose/e2e
-#         container_name: cypress
-#         ports:
-#             - 8080:8080
-#         depends_on:
-#             - webapp
-#         environment:
-#             - CYPRESS_baseUrl=http://webapp:3335
-# #        command: npx cypress run
-#         command: npx cypress open
-#         deploy:
-#             restart_policy:
-#                 condition: on-failure
-#                 delay: 10s
-#                 max_attempts: 5
-#                 window: 300s
+  webapp:
+    image: app:latest
+    build:
+      context: ./app
+      dockerfile: Dockerfile    
+    ports:
+      - 8888:8080
+    healthcheck:
+      test: ["CMD","curl","-f","http://localhost:8888"]
+      interval: 1m30s
+      timeout: 20s
+      retries: 5
+      start_period: 1m
+  testframework:
+    image: cypress
+    build: ./cypress_docker
+    container_name: cypress
+    ports:
+      - 8080:8080
+    depends_on:
+      - webapp
+    environment:
+      - CYPRESS_baseUrl=http://webapp:8080
+    #command: bash
+    volumes:
+      - "/home/other019/development/innovativeproject-test-engine/docker/cypress_docker/cypress:/app/cypress:rw"
+    #command: npx cypress open
+    command: npx cypress run
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 5
+        window: 300s
+
