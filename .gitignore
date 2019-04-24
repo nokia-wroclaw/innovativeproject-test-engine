@@ -1,1 +1,5 @@
 docker/app/test-engine-app-source
+**/node_modules
+docker/cypress_docker/cypress/videos
+docker/cypress_docker/cypress/screenshots/
+docker/cypress_docker/cypress/results

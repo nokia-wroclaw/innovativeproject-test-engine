@@ -17,15 +17,13 @@ services:
     image: cypress
     build: ./cypress_docker
     container_name: cypress
-    ports:
-      - 8080:8080
     depends_on:
       - webapp
     environment:
       - CYPRESS_baseUrl=http://webapp:8080
     #command: bash
     volumes:
-      - "/home/other019/development/innovativeproject-test-engine/docker/cypress_docker/cypress:/app/cypress:rw"
+      - "./cypress_docker/cypress:/app/cypress:rw"
     #command: npx cypress open
     command: npx cypress run
     deploy:

@@ -1,3 +1,10 @@
 {
-  "baseUrl": "http://webapp:8888"
+  "baseUrl": "http://webapp:8888",
+  "reporter":"mochawesome",
+  "reporterOptions":{
+  	"reportDir": "/app/cypress/results",
+  	"overwrite": false,
+  	"html": true,
+  	"json": true
+  }
 }
