@@ -4,9 +4,9 @@ services:
     image: app:latest
     build:
       context: ./app
-      dockerfile: Dockerfile    
+      dockerfile: Dockerfile
     ports:
-      - 8888:8080
+      - 5001:8080
     healthcheck:
       test: ["CMD","curl","-f","http://localhost:8888"]
       interval: 1m30s
@@ -21,10 +21,8 @@ services:
       - webapp
     environment:
       - CYPRESS_baseUrl=http://webapp:8080
-    #command: bash
     volumes:
       - "./cypress_docker/cypress:/app/cypress:rw"
-    #command: npx cypress open
     command: npx cypress run
     deploy:
       restart_policy:
@@ -32,4 +30,3 @@ services:
         delay: 10s
         max_attempts: 5
         window: 300s
-

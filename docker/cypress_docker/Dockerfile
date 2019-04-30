@@ -2,9 +2,13 @@ FROM cypress/base:10
 WORKDIR /app
 COPY package*.json ./
 
-#logging verbosity
-# ENV CI=1
-#RUN npm install --prefix /app --save-dev mocha mochawesome
+ARG proxy
+
+ENV http_proxy ${proxy}
+ENV https_proxy ${proxy}
+ENV NODE_TLS_REJECT_UNAUTHORIZED 0
+ENV NO_PROXY webapp
+
 RUN npm ci
 RUN npx cypress verify
 

@@ -1,5 +1,6 @@
 {
-  "baseUrl": "http://webapp:8888",
+  "baseUrl": "http://localhost:8080",
+  "blacklistHosts": ["*fonts.googleapis.com"],
   "reporter":"mochawesome",
   "reporterOptions":{
   	"reportDir": "/app/cypress/results",
