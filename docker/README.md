@@ -2,6 +2,8 @@
 
 ## Local development
 
+> **Node.js** is required for local development. Download it here: https://nodejs.org/en/
+
 ### Run the app locally
 1. Clone https://github.com/alexpilk/test-engine-app-source.git
 2. `cd` into `test-engine-app-source/vue/` directory
