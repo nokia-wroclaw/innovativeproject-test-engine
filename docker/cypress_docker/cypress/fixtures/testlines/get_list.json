@@ -1,0 +1,122 @@
+{
+    "url": "/api/v1/testlines/?fields%5Brelease%5D=name&fields%5Btestline%5D=id%2Cbench%2Crelease&filter%5Bteam__slug%5D=vegetableshop&include=release&page%5Blimit%5D=999",
+    "response": {
+        "payload": {
+            "action": "request",
+            "response_status": 200,
+            "errors": [],
+            "data": {
+                "included": [
+                    {
+                        "attributes": {
+                            "name": "zone_1"
+                        },
+                        "meta": {
+                            "system_module_type_display": null,
+                            "technology_type_display": null
+                        },
+                        "type": "release",
+                        "id": "1",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/releases/1/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "name": "zone_2"
+                        },
+                        "meta": {
+                            "system_module_type_display": null,
+                            "technology_type_display": null
+                        },
+                        "type": "release",
+                        "id": "2",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/releases/2/"
+                        }
+                    }
+                ],
+                "meta": {
+                    "pagination": {
+                        "count": 6,
+                        "limit": 999,
+                        "offset": 0
+                    }
+                },
+                "data": [
+                    {
+                        "relationships": {
+                            "release": {
+                                "data": {
+                                    "type": "release",
+                                    "id": "1"
+                                }
+                            }
+                        },
+                        "links": {
+                            "self": "http://websocket-api/api/v1/testlines/Section_1/"
+                        },
+                        "meta": {
+                            "statuses": null
+                        },
+                        "attributes": {
+                            "bench": "1"
+                        },
+                        "type": "testline",
+                        "id": "Section_1"
+                    },
+                    {
+                        "relationships": {
+                            "release": {
+                                "data": {
+                                    "type": "release",
+                                    "id": "2"
+                                }
+                            }
+                        },
+                        "links": {
+                            "self": "http://websocket-api/api/v1/testlines/Section_2/"
+                        },
+                        "meta": {
+                            "statuses": null
+                        },
+                        "attributes": {
+                            "bench": "2"
+                        },
+                        "type": "testline",
+                        "id": "Section_2"
+                    },
+                    {
+                        "relationships": {
+                            "release": {
+                                "data": {
+                                    "type": "release",
+                                    "id": "2"
+                                }
+                            }
+                        },
+                        "links": {
+                            "self": "http://websocket-api/api/v1/testlines/Texta_delivery/"
+                        },
+                        "meta": {
+                            "statuses": null
+                        },
+                        "attributes": {
+                            "bench": "1"
+                        },
+                        "type": "testline",
+                        "id": "Texta_delivery"
+                    }
+                ],
+                "links": {
+                    "prev": null,
+                    "next": null,
+                    "last": "http://websocket-api/api/v1/testlines/?fields%5Brelease%5D=name&fields%5Btestline%5D=id%2Cbench%2Crelease&filter%5Bteam__slug%5D=vegetableshop&include=release&page%5Blimit%5D=999",
+                    "first": "http://websocket-api/api/v1/testlines/?fields%5Brelease%5D=name&fields%5Btestline%5D=id%2Cbench%2Crelease&filter%5Bteam__slug%5D=vegetableshop&include=release&page%5Blimit%5D=999"
+                }
+            },
+            "request_id": null
+        },
+        "stream": "rest"
+    }
+}

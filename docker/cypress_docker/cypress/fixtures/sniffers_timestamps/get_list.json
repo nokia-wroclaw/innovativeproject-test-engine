@@ -1,0 +1,82 @@
+{
+    "url": "/api/v1/sniffers_timestamps/?fields%5Btestline%5D=id&filter%5Btestline_id%5D%5Bin%5D=Section_1%2CSection_2&filter%5Btimestamp__gte%5D=2019-04-10T08%3A00%3A00Z&filter%5Btimestamp__lt%5D=2019-04-11T08%3A00%3A00Z&include=testline&page%5Blimit%5D=1500",
+    "response": {
+        "payload": {
+            "action": "request",
+            "response_status": 200,
+            "errors": [],
+            "data": {
+                "included": [
+                    {
+                        "attributes": {},
+                        "meta": {
+                            "statuses": null
+                        },
+                        "type": "testline",
+                        "id": "Section_1",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/testlines/Section_1/"
+                        }
+                    }
+                ],
+                "meta": {
+                    "pagination": {
+                        "count": 843,
+                        "limit": 1500,
+                        "offset": 0
+                    }
+                },
+                "data": [
+                    {
+                        "relationships": {
+                            "testline": {
+                                "data": {
+                                    "type": "testline",
+                                    "id": "Section_1"
+                                }
+                            }
+                        },
+                        "attributes": {
+                            "timestamp": "2019-03-22T09:15:00Z",
+                            "messages": {
+                                "Banana": 1,
+                                "Tomato": 6,
+                                "Cucumber": 64
+                            }
+                        },
+                        "type": "sniffer_timestamp",
+                        "id": "133690"
+                    },
+                    {
+                        "relationships": {
+                            "testline": {
+                                "data": {
+                                    "type": "testline",
+                                    "id": "Section_1"
+                                }
+                            }
+                        },
+                        "attributes": {
+                            "timestamp": "2019-03-22T09:00:00Z",
+                            "messages": {
+                                "Banana": 1,
+                                "Tomato": 3,
+                                "Cucumber": 62
+                            }
+                        },
+                        "type": "sniffer_timestamp",
+                        "id": "133681"
+                    }
+                ],
+                "links": {
+                    "prev": null,
+                    "next": null,
+                    "last": "http://websocket-api/api/v1/sniffers_timestamps/?fields%5Btestline%5D=id&filter%5Btestline_id%5D%5Bin%5D=MRBTS-109028%2CSection_1%2CSection_2%2CMRBTS-101048%2CTexta_delivery%2CSection_1&filter%5Btimestamp__gte%5D=2019-03-13T09%3A22%3A53Z&filter%5Btimestamp__lt%5D=2019-03-22T09%3A22%3A53Z&include=testline&page%5Blimit%5D=1500",
+                    "first": "http://websocket-api/api/v1/sniffers_timestamps/?fields%5Btestline%5D=id&filter%5Btestline_id%5D%5Bin%5D=MRBTS-109028%2CSection_1%2CSection_2%2CMRBTS-101048%2CTexta_delivery%2CSection_1&filter%5Btimestamp__gte%5D=2019-03-13T09%3A22%3A53Z&filter%5Btimestamp__lt%5D=2019-03-22T09%3A22%3A53Z&include=testline&page%5Blimit%5D=1500"
+                }
+            },
+            "request_id": null
+        },
+        "stream": "rest"
+    }
+}

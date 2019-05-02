@@ -1,0 +1,46 @@
+{
+    "url": "/api/v1/teams/?page%5Blimit%5D=999",
+    "response": {
+        "payload": {
+            "action": "request",
+            "response_status": 200,
+            "errors": [],
+            "data": {
+                "meta": {
+                    "pagination": {
+                        "count": 1,
+                        "limit": 999,
+                        "offset": 0
+                    }
+                },
+                "data": [
+                    {
+                        "attributes": {
+                            "testline_count": 6,
+                            "country": "PL",
+                            "bench_count": 1,
+                            "name": "VegetableShop",
+                            "slug": "vegetableshop"
+                        },
+                        "meta": {
+                            "country_display": "Poland"
+                        },
+                        "type": "team",
+                        "id": "1",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/teams/vegetableshop/"
+                        }
+                    }
+                ],
+                "links": {
+                    "prev": null,
+                    "next": null,
+                    "last": "http://websocket-api/api/v1/teams/?page%5Blimit%5D=999",
+                    "first": "http://websocket-api/api/v1/teams/?page%5Blimit%5D=999"
+                }
+            },
+            "request_id": null
+        },
+        "stream": "rest"
+    }
+}
