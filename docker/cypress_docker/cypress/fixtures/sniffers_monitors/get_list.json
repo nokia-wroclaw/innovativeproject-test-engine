@@ -1,0 +1,205 @@
+{
+    "url": "/api/v1/sniffers_monitors/?filter%5Btestline_id%5D%5Bin%5D=Section_1%2CSection_2",
+    "response": {
+        "payload": {
+            "action": "request",
+            "response_status": 200,
+            "errors": [],
+            "data": {
+                "meta": {
+                    "pagination": {
+                        "count": 6,
+                        "limit": 10,
+                        "offset": 0
+                    }
+                },
+                "data": [
+                    {
+                        "attributes": {
+                            "testline": "MRBTS-100741",
+                            "api_key": {
+                                "owner_email": "lukasz.bosiacki@nokia.com",
+                                "create_time": "2019-02-19T08:40:45.367551Z",
+                                "owner_name": "bosiacki"
+                            }
+                        },
+                        "meta": {
+                            "message_types": [
+                                "Banana",
+                                "Apple",
+                                "Tomato",
+                                "Cucumber"
+                            ],
+                            "statuses": {
+                                "file_dispatch_status": "running",
+                                "file_watch_status": "running",
+                                "websocket_status": "connected",
+                                "pcap_status": "running",
+                                "message_counter_status": "running"
+                            }
+                        },
+                        "type": "sniffer_monitor",
+                        "id": "MRBTS-100741",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/sniffers_monitors/MRBTS-100741/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "testline": "Texta_delivery",
+                            "api_key": {
+                                "owner_email": "michal.kusiak@nokia.com",
+                                "create_time": "2019-02-05T10:12:51.614013Z",
+                                "owner_name": "mkusiak"
+                            }
+                        },
+                        "meta": {
+                            "message_types": [
+                                "Banana",
+                                "Apple",
+                                "Tomato",
+                                "Cucumber"
+                            ],
+                            "statuses": {
+                                "file_dispatch_status": null,
+                                "file_watch_status": null,
+                                "websocket_status": null,
+                                "pcap_status": null,
+                                "message_counter_status": null
+                            }
+                        },
+                        "type": "sniffer_monitor",
+                        "id": "Texta_delivery",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/sniffers_monitors/Texta_delivery/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "testline": "MRBTS-101048",
+                            "api_key": {
+                                "owner_email": "michal.kusiak@nokia.com",
+                                "create_time": "2019-02-04T15:13:52.164219Z",
+                                "owner_name": "mkusiak"
+                            }
+                        },
+                        "meta": {
+                            "message_types": [
+                                "Banana",
+                                "Apple",
+                                "Tomato",
+                                "Cucumber"
+                            ],
+                            "statuses": {
+                                "file_dispatch_status": null,
+                                "file_watch_status": null,
+                                "websocket_status": null,
+                                "pcap_status": null,
+                                "message_counter_status": null
+                            }
+                        },
+                        "type": "sniffer_monitor",
+                        "id": "MRBTS-101048",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/sniffers_monitors/MRBTS-101048/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "testline": "Section_2",
+                            "api_key": {
+                                "owner_email": "wojciech.trela@nokia.com",
+                                "create_time": "2018-05-23T13:16:33.935329Z",
+                                "owner_name": "wtrela"
+                            }
+                        },
+                        "meta": {
+                            "message_types": [
+                                "Banana",
+                                "Apple",
+                                "Tomato",
+                                "Cucumber"
+                            ],
+                            "statuses": {
+                                "file_dispatch_status": null,
+                                "file_watch_status": null,
+                                "websocket_status": null,
+                                "pcap_status": null,
+                                "message_counter_status": null
+                            }
+                        },
+                        "type": "sniffer_monitor",
+                        "id": "Section_2",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/sniffers_monitors/Section_2/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "testline": "Section_1",
+                            "api_key": {
+                                "owner_email": "michal.kusiak@nokia.com",
+                                "create_time": "2019-04-08T08:56:54.632545Z",
+                                "owner_name": "mkusiak"
+                            }
+                        },
+                        "meta": {
+                            "message_types": [
+                                "Banana",
+                                "Apple",
+                                "Tomato",
+                                "Cucumber"
+                            ],
+                            "statuses": {
+                                "file_dispatch_status": "unknown",
+                                "file_watch_status": "unknown",
+                                "websocket_status": "disconnected",
+                                "pcap_status": "unknown",
+                                "message_counter_status": "unknown"
+                            }
+                        },
+                        "type": "sniffer_monitor",
+                        "id": "Section_1",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/sniffers_monitors/Section_1/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "testline": "MRBTS-109028",
+                            "api_key": null
+                        },
+                        "meta": {
+                            "message_types": [
+                                "Banana",
+                                "Apple",
+                                "Tomato",
+                                "Cucumber"
+                            ],
+                            "statuses": {
+                                "file_dispatch_status": null,
+                                "file_watch_status": null,
+                                "websocket_status": null,
+                                "pcap_status": null,
+                                "message_counter_status": null
+                            }
+                        },
+                        "type": "sniffer_monitor",
+                        "id": "MRBTS-109028",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/sniffers_monitors/MRBTS-109028/"
+                        }
+                    }
+                ],
+                "links": {
+                    "prev": null,
+                    "next": null,
+                    "last": "http://websocket-api/api/v1/sniffers_monitors/?filter%5Btestline_id%5D%5Bin%5D=MRBTS-109028%2CSection_1%2CSection_2%2CMRBTS-101048%2CTexta_delivery%2CMRBTS-100741&page%5Blimit%5D=10",
+                    "first": "http://websocket-api/api/v1/sniffers_monitors/?filter%5Btestline_id%5D%5Bin%5D=MRBTS-109028%2CSection_1%2CSection_2%2CMRBTS-101048%2CTexta_delivery%2CMRBTS-100741"
+                }
+            },
+            "request_id": "id-51-vomjcc7u55j"
+        },
+        "stream": "rest"
+    }
+}

@@ -1,0 +1,332 @@
+{
+    "url": "/api/v1/testlines/?exclude_fields%5Btestline%5D=infomodel%2Cmask_attributes&filter%5Bid%5D%5Bin%5D=Section_1%2CSection_2&include=oms%2Csniffer_monitor%2Clmp_monitor",
+    "response": {
+        "payload": {
+            "action": "request",
+            "response_status": 200,
+            "errors": [],
+            "data": {
+                "included": [
+                    {
+                        "attributes": {
+                            "testline": "Section_2",
+                            "api_key": null
+                        },
+                        "meta": {
+                            "statuses": {
+                                "file_dispatch_status": null,
+                                "syslog_status": null,
+                                "websocket_status": null,
+                                "ssh_status": null,
+                                "file_watch_status": null,
+                                "bts_files_status": null
+                            }
+                        },
+                        "type": "lmp_monitor",
+                        "id": "Section_2",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/lmps_monitors/Section_2/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "testline": "Section_1",
+                            "api_key": null
+                        },
+                        "meta": {
+                            "statuses": {
+                                "file_dispatch_status": null,
+                                "syslog_status": null,
+                                "websocket_status": null,
+                                "ssh_status": null,
+                                "file_watch_status": null,
+                                "bts_files_status": null
+                            }
+                        },
+                        "type": "lmp_monitor",
+                        "id": "Section_1",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/lmps_monitors/Section_1/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "testline": "Section_2",
+                            "api_key": null
+                        },
+                        "meta": {
+                            "message_types": [
+                                "RRCConnectionRequest",
+                                "RRCConnectionSetup",
+                                "InitialUEMessage:mo-Data",
+                                "InitialUEMessage:mt-Access",
+                                "InitialContextSetupResponse",
+                                "InitialContextSetupFailure",
+                                "HandoverRequired",
+                                "HandoverRequest",
+                                "HandoverPreparationFailure",
+                                "HandoverFailure",
+                                "S1SetupRequest",
+                                "X2SetupRequest",
+                                "ResetRequest",
+                                "Paging",
+                                "MMEConfigurationUpdate",
+                                "ENBConfigurationUpdate",
+                                "ErrorIndication",
+                                "WriteReplaceWarningRequest",
+                                "KillRequest"
+                            ],
+                            "statuses": {
+                                "file_dispatch_status": null,
+                                "file_watch_status": null,
+                                "websocket_status": null,
+                                "pcap_status": null,
+                                "message_counter_status": null
+                            }
+                        },
+                        "type": "sniffer_monitor",
+                        "id": "Section_2",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/sniffers_monitors/Section_2/"
+                        }
+                    },
+                    {
+                        "attributes": {
+                            "testline": "Section_1",
+                            "api_key": null
+                        },
+                        "meta": {
+                            "message_types": [
+                                "RRCConnectionRequest",
+                                "RRCConnectionSetup",
+                                "InitialUEMessage:mo-Data",
+                                "InitialUEMessage:mt-Access",
+                                "InitialContextSetupResponse",
+                                "InitialContextSetupFailure",
+                                "HandoverRequired",
+                                "HandoverRequest",
+                                "HandoverPreparationFailure",
+                                "HandoverFailure",
+                                "S1SetupRequest",
+                                "X2SetupRequest",
+                                "ResetRequest",
+                                "Paging",
+                                "MMEConfigurationUpdate",
+                                "ENBConfigurationUpdate",
+                                "ErrorIndication",
+                                "WriteReplaceWarningRequest",
+                                "KillRequest"
+                            ],
+                            "statuses": {
+                                "file_dispatch_status": null,
+                                "file_watch_status": null,
+                                "websocket_status": null,
+                                "pcap_status": null,
+                                "message_counter_status": null
+                            }
+                        },
+                        "type": "sniffer_monitor",
+                        "id": "Section_1",
+                        "links": {
+                            "self": "http://websocket-api/api/v1/sniffers_monitors/Section_1/"
+                        }
+                    }
+                ],
+                "meta": {
+                    "pagination": {
+                        "count": 2,
+                        "limit": 10,
+                        "offset": 0
+                    }
+                },
+                "data": [
+                    {
+                        "relationships": {
+                            "customer": {
+                                "data": null
+                            },
+                            "sniffer_monitor": {
+                                "data": {
+                                    "type": "sniffer_monitor",
+                                    "id": "Section_1"
+                                }
+                            },
+                            "scf": {
+                                "meta": {
+                                    "count": 0
+                                },
+                                "data": []
+                            },
+                            "lmp_monitor": {
+                                "data": {
+                                    "type": "lmp_monitor",
+                                    "id": "Section_1"
+                                }
+                            },
+                            "oms": {
+                                "data": null
+                            },
+                            "team": {
+                                "data": {
+                                    "type": "team",
+                                    "id": "1"
+                                },
+                                "links": {
+                                    "related": "http://websocket-api/api/v1/teams/Section_1/"
+                                }
+                            },
+                            "release": {
+                                "data": {
+                                    "type": "release",
+                                    "id": "61"
+                                }
+                            },
+                            "monitor": {
+                                "data": {
+                                    "type": "testline_monitor",
+                                    "id": "Section_1"
+                                }
+                            }
+                        },
+                        "links": {
+                            "self": "http://websocket-api/api/v1/testlines/Section_1/"
+                        },
+                        "meta": {
+                            "statuses": {
+                                "testline_status": "degraded",
+                                "usage_status": "running",
+                                "pm_status": "running",
+                                "admin_infomodel_status": "running",
+                                "container_status": "running",
+                                "ssh_status": "running",
+                                "admin_status": "running",
+                                "websocket_status": "connected"
+                            }
+                        },
+                        "attributes": {
+                            "status": -1,
+                            "update_time": "2019-04-10T08:41:45.561242Z",
+                            "mplane": "10.42.174.131",
+                            "system_time": "2019-04-10T13:38:05Z",
+                            "uptime": "62 01:02:49",
+                            "bench": "",
+                            "create_time": "2017-04-12T13:48:01.766000Z",
+                            "utc_offset": "+0000",
+                            "infomodel_lite": {
+                                "rmods": {
+                                    "RMOD-R-1": {
+                                        "ip_address": "172.16.8.128",
+                                        "product_name": "FRGS"
+                                    },
+                                    "RMOD-R-2": {
+                                        "ip_address": "192.168.253.202",
+                                        "product_name": "FRHA"
+                                    }
+                                },
+                                "activesw": "none",
+                                "smod_variant": "ASIA AirScale Common"
+                            }
+                        },
+                        "type": "testline",
+                        "id": "Section_1"
+                    },
+                    {
+                        "relationships": {
+                            "customer": {
+                                "data": null
+                            },
+                            "sniffer_monitor": {
+                                "data": {
+                                    "type": "sniffer_monitor",
+                                    "id": "Section_2"
+                                }
+                            },
+                            "scf": {
+                                "meta": {
+                                    "count": 0
+                                },
+                                "data": []
+                            },
+                            "lmp_monitor": {
+                                "data": {
+                                    "type": "lmp_monitor",
+                                    "id": "Section_2"
+                                }
+                            },
+                            "oms": {
+                                "data": null
+                            },
+                            "team": {
+                                "data": {
+                                    "type": "team",
+                                    "id": "1"
+                                },
+                                "links": {
+                                    "related": "http://websocket-api/api/v1/teams/Section_2/"
+                                }
+                            },
+                            "release": {
+                                "data": null
+                            },
+                            "monitor": {
+                                "data": {
+                                    "type": "testline_monitor",
+                                    "id": "Section_2"
+                                }
+                            }
+                        },
+                        "links": {
+                            "self": "http://websocket-api/api/v1/testlines/Section_2/"
+                        },
+                        "meta": {
+                            "statuses": {
+                                "testline_status": "unknown",
+                                "usage_status": "running",
+                                "pm_status": "running",
+                                "admin_infomodel_status": "unknown",
+                                "container_status": "running",
+                                "ssh_status": "running",
+                                "admin_status": "unknown",
+                                "websocket_status": "connected"
+                            }
+                        },
+                        "attributes": {
+                            "status": -1,
+                            "update_time": "2019-04-10T08:41:31.621908Z",
+                            "mplane": "xxx",
+                            "system_time": "2019-04-10T13:39:43Z",
+                            "uptime": "14 02:48:17",
+                            "bench": "",
+                            "create_time": "2017-04-12T13:47:52.843000Z",
+                            "utc_offset": "+0200",
+                            "infomodel_lite": {
+                                "rmods": {
+                                    "RMOD-R-1": {
+                                        "ip_address": "xxx",
+                                        "product_name": "test"
+                                    },
+                                    "RMOD-R-2": {
+                                        "ip_address": "xxx",
+                                        "product_name": "test"
+                                    }
+                                },
+                                "activesw": "none",
+                                "smod_variant": "Flexi System Module Outdoor FSMF"
+                            }
+                        },
+                        "type": "testline",
+                        "id": "Section_2"
+                    }
+                ],
+                "links": {
+                    "prev": null,
+                    "next": null,
+                    "last": "http://websocket-api/api/v1/testlines/?exclude_fields%5Btestline%5D=infomodel%2Cmask_attributes&filter%5Bid%5D%5Bin%5D=Section_1%2CSection_2&include=oms%2Csniffer_monitor%2Clmp_monitor&page%5Blimit%5D=10",
+                    "first": "http://websocket-api/api/v1/testlines/?exclude_fields%5Btestline%5D=infomodel%2Cmask_attributes&filter%5Bid%5D%5Bin%5D=Section_1%2CSection_2&include=oms%2Csniffer_monitor%2Clmp_monitor"
+                }
+            },
+            "request_id": null
+        },
+        "stream": "rest"
+    }
+}

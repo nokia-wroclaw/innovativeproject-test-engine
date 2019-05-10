@@ -1,0 +1,95 @@
+{
+  "url": "/api/v1/tests_entries/?exclude_fields%5Btestline%5D=infomodel%2Cmask_attributes&fields%5Btestline%5D=id&filter%5Bstart_time__gte%5D=2019-04-10T08%3A00%3A00Z&filter%5Bstart_time__lt%5D=2019-04-11T08%3A00%3A00Z&filter%5Btestline_id%5D%5Bin%5D=Section_1%2CSection_2&include=testline&page%5Blimit%5D=500",
+  "response": {
+    "payload": {
+      "action": "request",
+      "response_status": 200,
+      "errors": [],
+      "data": {
+        "included": [
+          {
+            "attributes": {},
+            "meta": {
+              "statuses": null
+            },
+            "type": "testline",
+            "id": "Section_1",
+            "links": {
+              "self": "http://websocket-api/api/v1/testlines/Section_1/"
+            }
+          },
+          {
+            "attributes": {},
+            "meta": {
+              "statuses": null
+            },
+            "type": "testline",
+            "id": "Section_1",
+            "links": {
+              "self": "http://websocket-api/api/v1/testlines/Section_1/"
+            }
+          }
+        ],
+        "meta": {
+          "pagination": {
+            "count": 26,
+            "limit": 500,
+            "offset": 0
+          }
+        },
+        "data": [
+          {
+            "relationships": {
+              "testline": {
+                "data": {
+                  "type": "testline",
+                  "id": "Section_1"
+                }
+              }
+            },
+            "attributes": {
+              "status": "FAIL",
+              "title": "New order",
+              "start_time": "2019-03-22T01:00:13.105000Z",
+              "supplementary_info": "",
+              "report_url": "https://jsonplaceholder.typicode.com/posts/1",
+              "end_time": "2019-03-22T01:01:13.353000Z",
+              "diagnostic_info": ""
+            },
+            "type": "test_entry",
+            "id": "58153"
+          },
+          {
+            "relationships": {
+              "testline": {
+                "data": {
+                  "type": "testline",
+                  "id": "Section_1"
+                }
+              }
+            },
+            "attributes": {
+              "status": "FAIL",
+              "title": "New order",
+              "start_time": "2019-03-21T11:42:08.108000Z",
+              "supplementary_info": "",
+              "report_url": "https://jsonplaceholder.typicode.com/posts/2",
+              "end_time": "2019-03-21T11:43:08.368000Z",
+              "diagnostic_info": ""
+            },
+            "type": "test_entry",
+            "id": "57668"
+          }
+        ],
+        "links": {
+          "prev": null,
+          "next": null,
+          "last": "http://websocket-api/api/v1/tests_entries/?exclude_fields%5Btestline%5D=infomodel%2Cmask_attributes&fields%5Btestline%5D=id&filter%5Bstart_time__gte%5D=2019-03-13T09%3A22%3A53Z&filter%5Bstart_time__lt%5D=2019-03-22T09%3A22%3A53Z&filter%5Btestline_id%5D%5Bin%5D=MRBTS-109028%2CSection_1%2CSection_2%2CMRBTS-101048%2CTexta_delivery%2CMRBTS-100741&include=testline&page%5Blimit%5D=500",
+          "first": "http://websocket-api/api/v1/tests_entries/?exclude_fields%5Btestline%5D=infomodel%2Cmask_attributes&fields%5Btestline%5D=id&filter%5Bstart_time__gte%5D=2019-03-13T09%3A22%3A53Z&filter%5Bstart_time__lt%5D=2019-03-22T09%3A22%3A53Z&filter%5Btestline_id%5D%5Bin%5D=MRBTS-109028%2CSection_1%2CSection_2%2CMRBTS-101048%2CTexta_delivery%2CMRBTS-100741&include=testline&page%5Blimit%5D=500"
+        }
+      },
+      "request_id": "id-50-5ekftesepp5"
+    },
+    "stream": "rest"
+  }
+}

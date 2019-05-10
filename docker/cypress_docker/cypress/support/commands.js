@@ -23,3 +23,19 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+import { Deserializer } from 'jsonapi-serializer'
+
+Cypress.Commands.add('jsonFixture', (path) => {
+  return cy.fixture(path).then(mock => {
+    const { links, meta, ...data } = mock.response.payload['data']
+    return new Deserializer().deserialize(data).then(
+      deserialized => deserialized
+    )
+  })
+})
+
+Cypress.Commands.add('selectStore', (name) => {
+  cy.get('[data-cy=shopSelect]').should('not.have.attr', 'readonly', 'readonly')
+  cy.get('[data-cy=shopSelect]').click()
+  cy.contains(name).click()
+})

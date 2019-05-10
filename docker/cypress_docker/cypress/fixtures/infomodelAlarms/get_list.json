@@ -1,0 +1,60 @@
+{
+    "url": "/api/v1/infomodel_alarms/?filter%5Bconfirmed%5D=False&filter%5Btestline__team__slug%5D=vegetableshop&page%5Blimit%5D=25",
+    "response": {
+        "payload": {
+            "action": "request",
+            "response_status": 200,
+            "errors": [],
+            "data": {
+                "meta": {
+                    "pagination": {
+                        "count": 1,
+                        "limit": 25,
+                        "offset": 0
+                    }
+                },
+                "data": [
+                    {
+                        "relationships": {
+                            "testline": {
+                                "data": {
+                                    "type": "testline",
+                                    "id": "Texta_delivery"
+                                }
+                            }
+                        },
+                        "links": {
+                            "self": "http://websocket-api/api/v1/infomodel_alarms/1/"
+                        },
+                        "meta": {
+                            "notification_id": "Texta_delivery",
+                            "status_display": "active"
+                        },
+                        "attributes": {
+                            "status": 1,
+                            "confirmed": false,
+                            "fault_id": 1,
+                            "name": "new fault",
+                            "alarm_id": 7115,
+                            "start_time": "2019-04-10T06:41:18.156052Z",
+                            "notification_detail": "No fruits",
+                            "end_time": "2019-04-10T06:45:18.156052Z",
+                            "alarming_resource": "",
+                            "severity": "Minor"
+                        },
+                        "type": "infomodel_alarm",
+                        "id": "1"
+                    }
+                ],
+                "links": {
+                    "prev": null,
+                    "next": null,
+                    "last": "http://websocket-api/api/v1/infomodel_alarms/?filter%5Bconfirmed%5D=False&filter%5Btestline__team__slug%5D=vegetableshop&page%5Blimit%5D=25",
+                    "first": "http://websocket-api/api/v1/infomodel_alarms/?filter%5Bconfirmed%5D=False&filter%5Btestline__team__slug%5D=vegetableshop&page%5Blimit%5D=25"
+                }
+            },
+            "request_id": null
+        },
+        "stream": "rest"
+    }
+}
