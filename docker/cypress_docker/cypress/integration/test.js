@@ -141,7 +141,7 @@ describe('Test', () => {
       cy.get(':nth-child(2) > .v-input > .v-input__control > .v-input__slot > :nth-child(2) > .v-input__icon > .v-icon')
         .click()
         cy.get('[data-cy=notificationsSearchBox]')
-          .should('not.have.value', 'sample_text')
+          .should('have.value', '')
     })
   })
 
